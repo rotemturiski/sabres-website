@@ -2,11 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
   
   /* Sabres Palette - Restored Vibrant */
   --primary: #fdab3d;
-  --primary-foreground: #1a1a1a; 
+  --primary-foreground: #333333; 
   
   /* Restored Green Secondary */
   --secondary: #00c875;
@@ -16,7 +16,7 @@
   --muted-foreground: #71717a;
   
   --card: #ffffff;
-  --card-foreground: #171717;
+  --card-foreground: #333333;
   
   --border: #e4e4e7;
   
@@ -64,7 +64,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #333333;
   }
 }
 

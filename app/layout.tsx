@@ -30,34 +30,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col relative overflow-x-hidden`}
       >
-        {/* Fixed Orange Gradient - Top Right */}
+        {/* Orange Gradient - Top Right of PAGE (scrolls with content) */}
         <div 
-          className="pointer-events-none"
+          className="absolute top-[-500px] md:top-[-300px] right-[-300px] -mr-40 -mt-40 w-[1200px] h-[1200px] rounded-full pointer-events-none opacity-80 md:opacity-100"
           style={{
-            position: 'fixed',
-            top: '-200px',
-            right: '-200px',
-            width: '800px',
-            height: '800px',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(253, 171, 61, 0.15) 0%, rgba(253, 171, 61, 0.05) 40%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(253, 171, 61, 0.18) 0%, rgba(253, 171, 61, 0.06) 40%, transparent 70%)',
             zIndex: -1,
           }}
         />
         
-        {/* Fixed Green Gradient - Bottom Left */}
+        {/* Green Gradient - Bottom Left of PAGE (at the very bottom of all content) */}
         <div 
-          className="pointer-events-none"
+          className="absolute bottom-[100px] left-[-300px] -ml-40 -mb-40 w-[1000px] h-[1000px] rounded-full pointer-events-none opacity-50"
           style={{
-            position: 'fixed',
-            bottom: '-200px',
-            left: '-200px',
-            width: '700px',
-            height: '700px',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(0, 200, 117, 0.12) 0%, rgba(0, 200, 117, 0.04) 40%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(0, 200, 117, 0.15) 0%, rgba(0, 200, 117, 0.05) 30%, transparent 70%)',
             zIndex: -1,
           }}
         />
