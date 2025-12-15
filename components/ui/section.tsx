@@ -12,7 +12,7 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
     return (
       <section
         ref={ref}
-        className={cn("py-16 md:py-24 relative overflow-hidden", className)}
+        className={cn("relative overflow-hidden", className)}
         {...props}
       >
         {children}

@@ -2,26 +2,27 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #333333;
+  --foreground: #293041;
   
   /* Sabres Palette - Restored Vibrant */
-  --primary: #fdab3d;
-  --primary-foreground: #333333; 
+  --primary: #ff964f;
+  /* --primary: #fdab3d; */
+  --primary-foreground: #293041; 
   
-  /* Restored Green Secondary */
-  --secondary: #00c875;
-  --secondary-foreground: #ffffff;
+  /* Relaxing Green Secondary */
+  --secondary: #669457; /* A slightly darker, relaxing green (green-400) */
+  --secondary-foreground: #293041;
   
   --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  --muted-foreground: #434959;
   
   --card: #ffffff;
-  --card-foreground: #333333;
+  --card-foreground: #293041;
   
   --border: #e4e4e7;
   
   --input: #e4e4e7;
-  --ring: #fdab3d;
+  --ring: #ff964f;
 }
 
 @theme inline {
@@ -64,15 +65,17 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #333333;
+    --foreground: #293041;
   }
 }
 
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  font-weight: 300;
+  overflow-x: clip;
+  max-width: 100vw;
 }
 
 /* Custom Scrollbar */

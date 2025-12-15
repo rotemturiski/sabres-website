@@ -14,7 +14,7 @@ export function Program() {
     {
       icon: UsersRound,
       title: "Group Formation",
-      description: "Diverse groups of new and veteran Israelis are formed, led by two trained leaders.",
+      description: "Diverse groups of new and veteran Israelis are formed, led by trained group leaders.",
     },
     {
       icon: MessageSquare,
@@ -43,8 +43,8 @@ export function Program() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Program Structure</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="text-3xl md:text-4xl font-medium mb-4">Program Structure</h2>
+            <p className="text-lg text-muted-foreground/80">
               A structured five-stage journey designed to create meaningful connections.
             </p>
           </motion.div>
@@ -68,21 +68,21 @@ export function Program() {
                   <step.icon className="h-8 w-8 text-zinc-500 stroke-[1.5]" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
+                <p className="text-sm text-muted-foreground/80">{step.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
         
         <div className="mt-16 text-center">
-             <div className="inline-flex items-center gap-8 px-8 py-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-zinc-100">
+             <div className="inline-flex items-center gap-8 px-8 py-4 bg-primary/5 backdrop-blur-sm rounded-2xl border border-primary/20">
                 <div className="text-center">
-                    <span className="block text-2xl font-bold text-zinc-800">Nov - Apr</span>
+                    <span className="block text-2xl font-medium text-zinc-700">Half a year</span>
                     <span className="text-xs text-muted-foreground uppercase tracking-wide">Cohort Period</span>
                 </div>
                 <div className="h-8 w-px bg-zinc-200"></div>
                  <div className="text-center">
-                    <span className="block text-2xl font-bold text-zinc-800">8</span>
+                    <span className="block text-2xl font-medium text-zinc-700">8</span>
                     <span className="text-xs text-muted-foreground uppercase tracking-wide">Sessions</span>
                 </div>
              </div>

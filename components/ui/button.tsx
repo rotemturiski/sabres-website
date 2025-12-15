@@ -11,11 +11,11 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "default", size = "default", asChild = false, children, ...props }, ref) => {
     const variants = {
-      default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md",
-      secondary: "bg-gray-100 text-gray-900 hover:bg-gray-200 shadow-sm",
+      default: "bg-secondary text-white hover:bg-secondary/90",
+      secondary: "bg-gray-100 text-gray-900 hover:bg-gray-200",
       ghost: "hover:bg-muted hover:text-foreground",
       link: "text-primary underline-offset-4 hover:underline",
-      white: "bg-white text-primary hover:bg-gray-100 shadow-md",
+      white: "bg-white text-primary hover:bg-gray-50 border border-gray-100",
     };
 
     const sizes = {

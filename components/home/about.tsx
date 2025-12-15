@@ -37,10 +37,10 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Sabres?</h2>
-            <p className="text-lg text-muted-foreground">
-              Sabres was created to address the gap of social isolation. We believe
-              in fostering belonging through lasting human connections.
+            <h2 className="text-3xl md:text-4xl font-medium mb-4">Why Sabres?</h2>
+            <p className="text-lg text-muted-foreground/80">
+              Sabres was created in response to growing social isolation, with a simple goal: <br />
+               bringing people together around real conversations and shared experiences.
             </p>
           </motion.div>
         </div>
@@ -54,13 +54,13 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full border border-zinc-100 shadow-sm bg-white/80 backdrop-blur-sm hover:border-zinc-200 transition-colors">
+              <Card className="h-full border bg-white/80 backdrop-blur-sm border-zinc-200 ">
                 <CardContent className="pt-6 flex flex-col items-center text-center">
                   <div className="p-3 bg-zinc-50 rounded-full mb-4">
-                    <feature.icon className="h-6 w-6 text-zinc-700" />
+                    <feature.icon className="h-6 w-6 text-foreground fill-secondary stroke-none" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <h3 className="text-xl text-foreground font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-muted-foreground/80">{feature.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
