@@ -6,19 +6,22 @@ import { Alumni } from "@/components/home/alumni";
 import { FAQ } from "@/components/home/faq";
 import { OurStory } from "@/components/home/our-story";
 import { Contact } from "@/components/home/contact";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-44 md:gap-[220px]">
-      <Hero />
-      <About />
-      {/* <Themes /> */}
-      <Program />
-      <Alumni />
-      <OurStory />
-      <Audience />
-      <FAQ />
-      <Contact />
-    </div>
+    <Suspense fallback={null}>
+      <div className="flex flex-col gap-44 md:gap-[220px]">
+        <Hero />
+        <About />
+        {/* <Themes /> */}
+        <Program />
+        <Alumni />
+        <OurStory />
+        <Audience />
+        <FAQ />
+        <Contact />
+      </div>
+    </Suspense>
   );
 }

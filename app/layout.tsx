@@ -3,6 +3,8 @@ import { Poppins, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { HtmlLangDir } from "@/components/i18n/HtmlLangDir";
+import { Suspense } from "react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sabres | Building Bridges, Creating Belonging",
+  title: "Sabres | Zionism, Friendship, Belonging",
   description: "A group-based program connecting new Olim and veteran Israelis through shared experiences, open dialogue, and lasting friendships",
   icons: {
     icon: "/icon.svg",
@@ -32,6 +34,9 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${geistMono.variable} antialiased min-h-screen flex flex-col relative`}
       >
+        <Suspense fallback={null}>
+          <HtmlLangDir />
+        </Suspense>
         {/* Orange Gradient - Top Right of PAGE (scrolls with content) */}
         <div 
           className="absolute top-[-800px] right-[-1200px] md:top-[-800px] md:right-[-800px] -mr-40 -mt-40 w-[1800px] h-[1800px] rounded-full pointer-events-none opacity-90 md:opacity-100"
@@ -48,11 +53,15 @@ export default function RootLayout({
           }}
         />
 
-        <Header />
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
         <main className="flex-1 relative">
           {children}
         </main>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

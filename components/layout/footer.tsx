@@ -1,12 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Container } from "@/components/ui/section";
 import { Mail, Instagram, Heart } from "lucide-react";
+import { content, getLangFromSearchParams } from "@/lib/i18n";
 
 export function Footer() {
   const DONATE_URL =
     "https://pay.sumit.co.il/2vcnc6/41lc8v/c/payment/?cartid=7e0fa9f6-2de2-43d9-8952-01ecd4030dd7";
+
+  const lang = getLangFromSearchParams(useSearchParams());
+  const t = content[lang].footer;
 
   return (
     <footer className="bg-zinc-50/80 pb-12 pt-20 border-t border-zinc-100">
@@ -20,10 +25,10 @@ export function Footer() {
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             <Heart className="h-5 w-5" />
-            Help Sabres Grow!
+            {t.donateCta}
           </a>
           <p className="mt-4 text-zinc-500 max-w-md mx-auto">
-            Your contribution helps us continue building meaningful connections and expanding the program.
+            {t.donateDescription}
           </p>
         </div>
 
@@ -32,27 +37,27 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-2xl font-medium text-primary">Sabres</h3>
             <p className="text-zinc-500 max-w-xs">
-              Building friendships between Olim and veteran Israelis to foster a connected, multicultural society.
+              {t.brandDescription}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-zinc-700">Program</h4>
+            <h4 className="font-semibold text-lg text-zinc-700">{t.programHeading}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#about" className="text-zinc-500 hover:text-primary transition-colors">
-                  About
+                  {t.links.about}
                 </Link>
               </li>
               <li>
                 <Link href="#program" className="text-zinc-500 hover:text-primary transition-colors">
-                  Timeline
+                  {t.links.timeline}
                 </Link>
               </li>
               <li>
                 <Link href="#themes" className="text-zinc-500 hover:text-primary transition-colors">
-                  Themes
+                  {t.links.themes}
                 </Link>
               </li>
               <li>
@@ -62,7 +67,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-zinc-500 hover:text-primary transition-colors"
                 >
-                  Apply
+                  {t.links.apply}
                 </a>
               </li>
             </ul>
@@ -70,7 +75,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-zinc-700">Contact Us</h4>
+            <h4 className="font-semibold text-lg text-zinc-700">{t.contactHeading}</h4>
             <ul className="space-y-3">
               <li>
                 <a
@@ -96,7 +101,9 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-zinc-100 text-center text-sm text-zinc-400">
-          <p>&copy; {new Date().getFullYear()} Sabres Community. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} {t.copyright}
+          </p>
         </div>
       </Container>
     </footer>

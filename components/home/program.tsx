@@ -3,33 +3,38 @@
 import { Container, Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
 import { ClipboardList, UsersRound, MessageSquare, CalendarDays, GraduationCap } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { content, getLangFromSearchParams } from "@/lib/i18n";
 
 export function Program() {
+  const lang = getLangFromSearchParams(useSearchParams());
+  const t = content[lang].home.program;
+
   const steps = [
     {
       icon: ClipboardList,
-      title: "Application",
-      description: "Participants complete a form and attend a personal interview.",
+      title: t.steps[0].title,
+      description: t.steps[0].description,
     },
     {
       icon: UsersRound,
-      title: "Group Formation",
-      description: "Diverse groups of new and veteran Israelis are formed, led by trained group leaders.",
+      title: t.steps[1].title,
+      description: t.steps[1].description,
     },
     {
       icon: MessageSquare,
-      title: "Group Sessions",
-      description: "Seven tri-weekly meetings including discussions, workshops, dinners, and trips.",
+      title: t.steps[2].title,
+      description: t.steps[2].description,
     },
     {
       icon: CalendarDays,
-      title: "Independent Meetups",
-      description: "Informal gatherings organized by participants to deepen relationships outside formal sessions.",
+      title: t.steps[3].title,
+      description: t.steps[3].description,
     },
     {
       icon: GraduationCap,
-      title: "Wrap-Up & Alumni",
-      description: "Final reflection session and integration into the alumni community for continued involvement.",
+      title: t.steps[4].title,
+      description: t.steps[4].description,
     },
   ];
 
@@ -43,9 +48,9 @@ export function Program() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-medium mb-4">Program Structure</h2>
+          <h2 className="text-3xl md:text-4xl font-medium mb-4">{t.heading}</h2>
             <p className="text-lg text-muted-foreground/80">
-              A structured five-stage journey designed to create meaningful connections.
+              {t.subheading}
             </p>
           </motion.div>
         </div>
@@ -77,13 +82,13 @@ export function Program() {
         <div className="mt-16 text-center">
              <div className="inline-flex items-center gap-8 px-8 py-4 bg-primary/5 backdrop-blur-sm rounded-2xl border border-primary/20">
                 <div className="text-center">
-                    <span className="block text-2xl font-medium text-zinc-700">Half a year</span>
-                    <span className="text-xs text-muted-foreground uppercase tracking-wide">Cohort Period</span>
+                    <span className="block text-2xl font-medium text-zinc-700">{t.cohortPeriodValue}</span>
+                    <span className="text-xs text-muted-foreground uppercase tracking-wide">{t.cohortPeriodLabel}</span>
                 </div>
                 <div className="h-8 w-px bg-zinc-200"></div>
                  <div className="text-center">
-                    <span className="block text-2xl font-medium text-zinc-700">7</span>
-                    <span className="text-xs text-muted-foreground uppercase tracking-wide">Sessions</span>
+                    <span className="block text-2xl font-medium text-zinc-700">{t.sessionsValue}</span>
+                    <span className="text-xs text-muted-foreground uppercase tracking-wide">{t.sessionsLabel}</span>
                 </div>
              </div>
         </div>

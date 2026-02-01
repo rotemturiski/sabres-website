@@ -4,27 +4,16 @@ import { Container, Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Heart, Users, MapPin } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { content, getLangFromSearchParams } from "@/lib/i18n";
 
 export function About() {
+  const lang = getLangFromSearchParams(useSearchParams());
+  const t = content[lang].home.about;
   const features = [
-    {
-      icon: Users,
-      title: "The Challenge",
-      description:
-        "Many young Olim struggle to adapt, with ~30% leaving within five years. Meanwhile, veteran Israelis often lack meaningful interaction with Olim.",
-    },
-    {
-      icon: Heart,
-      title: "Our Mission",
-      description:
-        "To build friendships between Olim and veteran Israelis, helping both sides feel genuine connection, belonging, and mutual responsibility.",
-    },
-    {
-      icon: MapPin,
-      title: "Our Vision",
-      description:
-        "A connected, multicultural Israeli society that welcomes Olim with compassion and strengthens a shared sense of belonging.",
-    },
+    { icon: Users, ...t.features[0] },
+    { icon: Heart, ...t.features[1] },
+    { icon: MapPin, ...t.features[2] },
   ];
 
   return (
@@ -37,10 +26,11 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-medium mb-4">Why Sabres?</h2>
+            <h2 className="text-3xl md:text-4xl font-medium mb-4">{t.heading}</h2>
             <p className="text-lg text-muted-foreground/80">
-              Sabres was created in response to growing social isolation, with a simple goal: <br />
-               bringing people together around real conversations and shared experiences.
+              {t.subheadingPrefix}
+              <br />
+              {t.subheadingSuffix}
             </p>
           </motion.div>
         </div>

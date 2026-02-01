@@ -3,14 +3,13 @@
 import { Container, Section } from "@/components/ui/section";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "next/navigation";
+import { content, getLangFromSearchParams } from "@/lib/i18n";
 
 export function Audience() {
-  const requirements = [
-    "Ages 23 - 33 (approx.)",
-    "Basic level of English",
-    "Commitment to attend all sessions",
-    "Interest in personal development & community",
-  ];
+  const lang = getLangFromSearchParams(useSearchParams());
+  const t = content[lang].home.audience;
+  const requirements = t.requirements;
 
   return (
     <Section className="bg-transparent">
@@ -23,16 +22,16 @@ export function Audience() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="text-center md:text-left mb-12">
-                <h2 className="text-3xl md:text-4xl font-medium mb-6 text-foreground">Who is this for?</h2>
+              <div className="text-center md:text-start mb-12">
+                <h2 className="text-3xl md:text-4xl font-medium mb-6 text-foreground">{t.heading}</h2>
                 <p className="text-xl text-muted-foreground/80 mb-8 leading-relaxed">
-                  We are looking for Olim and Native-born Israelis who want to be part of something bigger.
+                  {t.description}
                 </p>
               </div>
               <div className="p-6 bg-primary/5 rounded-xl border border-orange-100 shadow-sm">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Registration Fee</h3>
-                <p className="text-3xl font-medium text-primary">₪250</p>
-                <p className="text-sm text-muted-foreground">Commitment fee for the full program</p>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">{t.registrationFeeHeading}</h3>
+                <p className="text-3xl font-medium text-primary">{t.registrationFeeAmount}</p>
+                <p className="text-sm text-muted-foreground">{t.registrationFeeNote}</p>
               </div>
             </motion.div>
           </div>
@@ -44,7 +43,7 @@ export function Audience() {
               viewport={{ once: true }}
               className="bg-white/80 backdrop-blur-sm text-foreground rounded-2xl p-8 border border-zinc-200"
             >
-              <h3 className="text-2xl font-medium mb-6">Requirements</h3>
+              <h3 className="text-2xl font-medium mb-6">{t.requirementsHeading}</h3>
               <ul className="space-y-4">
                 {requirements.map((req, index) => (
                   <li key={index} className="flex items-center gap-3">
