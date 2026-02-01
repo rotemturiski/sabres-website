@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\sagro\\\\private\\\\apps\\\\sabres-website\\\\public\"\" | grep -E \"robots)",
+      "Bash(sitemap)",
+      "Bash(manifest)",
+      "Bash(favicon \")",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

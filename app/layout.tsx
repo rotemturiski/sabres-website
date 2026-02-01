@@ -4,7 +4,9 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { HtmlLangDir } from "@/components/i18n/HtmlLangDir";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Suspense } from "react";
+import { SITE_URL } from "@/lib/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,11 +19,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sabres | Zionism, Friendship, Belonging",
-  description: "A group-based program connecting new Olim and veteran Israelis through shared experiences, open dialogue, and lasting friendships",
+  metadataBase: new URL(SITE_URL),
   icons: {
-    icon: "/icon.svg",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
@@ -34,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${geistMono.variable} antialiased min-h-screen flex flex-col relative`}
       >
+        <JsonLd />
         <Suspense fallback={null}>
           <HtmlLangDir />
         </Suspense>

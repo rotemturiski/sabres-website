@@ -1,0 +1,20 @@
+{
+  "name": "Sabres Community",
+  "short_name": "Sabres",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff964f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/sabres.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
