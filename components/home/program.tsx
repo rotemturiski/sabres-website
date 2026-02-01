@@ -19,7 +19,7 @@ export function Program() {
     {
       icon: MessageSquare,
       title: "Group Sessions",
-      description: "Eight tri-weekly meetings including discussions, workshops, dinners, and trips.",
+      description: "Seven tri-weekly meetings including discussions, workshops, dinners, and trips.",
     },
     {
       icon: CalendarDays,
@@ -82,7 +82,7 @@ export function Program() {
                 </div>
                 <div className="h-8 w-px bg-zinc-200"></div>
                  <div className="text-center">
-                    <span className="block text-2xl font-medium text-zinc-700">8</span>
+                    <span className="block text-2xl font-medium text-zinc-700">7</span>
                     <span className="text-xs text-muted-foreground uppercase tracking-wide">Sessions</span>
                 </div>
              </div>

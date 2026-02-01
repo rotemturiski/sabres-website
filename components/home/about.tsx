@@ -11,19 +11,19 @@ export function About() {
       icon: Users,
       title: "The Challenge",
       description:
-        "Many young immigrants struggle to adapt, with ~30% leaving within five years. Meanwhile, veteran Israelis often lack meaningful interaction with new Olim.",
+        "Many young Olim struggle to adapt, with ~30% leaving within five years. Meanwhile, veteran Israelis often lack meaningful interaction with Olim.",
     },
     {
       icon: Heart,
       title: "Our Mission",
       description:
-        "To build friendships between new immigrants and veteran Israelis, helping both sides feel genuine connection, belonging, and mutual responsibility.",
+        "To build friendships between Olim and veteran Israelis, helping both sides feel genuine connection, belonging, and mutual responsibility.",
     },
     {
       icon: MapPin,
       title: "Our Vision",
       description:
-        "A connected, multicultural Israeli society that welcomes immigration with compassion and strengthens a shared sense of belonging.",
+        "A connected, multicultural Israeli society that welcomes Olim with compassion and strengthens a shared sense of belonging.",
     },
   ];
 

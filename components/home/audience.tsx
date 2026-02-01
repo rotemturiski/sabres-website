@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function Audience() {
   const requirements = [
-    "Ages 23–30 (approx.)",
+    "Ages 23 - 33 (approx.)",
     "Basic level of English",
     "Commitment to attend all sessions",
     "Interest in personal development & community",
@@ -26,12 +26,12 @@ export function Audience() {
               <div className="text-center md:text-left mb-12">
                 <h2 className="text-3xl md:text-4xl font-medium mb-6 text-foreground">Who is this for?</h2>
                 <p className="text-xl text-muted-foreground/80 mb-8 leading-relaxed">
-                  We are looking for New Immigrants (Olim) and Native-born Israelis who want to be part of something bigger.
+                  We are looking for Olim and Native-born Israelis who want to be part of something bigger.
                 </p>
               </div>
               <div className="p-6 bg-primary/5 rounded-xl border border-orange-100 shadow-sm">
                 <h3 className="text-xl font-semibold mb-2 text-foreground">Registration Fee</h3>
-                <p className="text-3xl font-medium text-primary">₪200</p>
+                <p className="text-3xl font-medium text-primary">₪250</p>
                 <p className="text-sm text-muted-foreground">Commitment fee for the full program</p>
               </div>
             </motion.div>

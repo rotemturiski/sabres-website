@@ -10,15 +10,15 @@ export function FAQ() {
   const faqs = [
     {
       question: "Who is Sabres for?",
-      answer: "Sabres is for young adults (ages 23–30) — new immigrants and native Israelis — who are curious about meeting people from different backgrounds and building real connections over time.",
+      answer: "Sabres is for young adults (ages 23 - 33) — Olim and native Israelis — who are curious about meeting people from different backgrounds and building real connections over time.",
     },
     {
       question: "How much does the program cost?",
-      answer: "The full program costs 200 NIS in total, covering all sessions. The fee helps ensure commitment, but Sabres is subsidized so cost won't be a barrier to participation.",
+      answer: "The full program costs 250 NIS in total, covering all sessions. The fee helps ensure commitment, but Sabres is subsidized so cost won't be a barrier to participation.",
     },
     {
       question: "What actually happens in the program?",
-      answer: "Participants meet in a small, facilitated group eight times over several months. Sessions include things like a shared meal where everyone brings food that represents where they come from, a group hike or trip around the country, learning and open conversations, and simple hangouts — like spending time together at the beach.",
+      answer: "Participants meet in a small, facilitated group seven times over several months. Sessions include things like a shared meal where everyone brings food that represents where they come from, a group hike or trip around the country, learning and open conversations, and simple hangouts — like spending time together at the beach.",
     },
     {
       question: "Is this a political program?",
@@ -26,7 +26,7 @@ export function FAQ() {
     },
     {
       question: "Who runs Sabres?",
-      answer: "Sabres was founded and is run day-to-day by a dedicated team that leads the program, works with participants, and shapes the overall experience. The initiative operates under the umbrella of Yahav – Mechanchim LeTzionut, an educational nonprofit organization focused on values-based learning, identity, and social cohesion in Israeli society. Yahav provides organizational support, guidance, and infrastructure, while the Sabres team focuses on building the program and the community around it.",
+      answer: "Sabres was founded and is run day-to-day by a dedicated team that leads the program, works with participants, and shapes the overall experience. The initiative operates under the umbrella of Yahav  -  Mechanchim LeTzionut, an educational nonprofit organization focused on values-based learning, identity, and social cohesion in Israeli society. Yahav provides organizational support, guidance, and infrastructure, while the Sabres team focuses on building the program and the community around it.",
     },
     {
       question: "Do I need to commit to the full program?",

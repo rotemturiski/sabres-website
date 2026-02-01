@@ -33,7 +33,7 @@ export function Contact() {
                </Button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
                 <motion.a 
                     href="mailto:sabres.projects@gmail.com"
                     whileHover={{ y: -4 }}
@@ -63,19 +63,6 @@ export function Contact() {
                         <span className="text-zinc-500 text-sm">@sabres.community</span>
                     </div>
                 </motion.a>
-
-                <motion.div 
-                    whileHover={{ y: -4 }}
-                    className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-zinc-200 hover:border-zinc-300 transition-all group cursor-pointer"
-                >
-                    <div className="h-12 w-12 rounded-xl border border-zinc-200 flex items-center justify-center group-hover:border-zinc-300 transition-colors">
-                        <Image src="/phone.svg" alt="Phone" width={24} height={24} />
-                    </div>
-                    <div className="text-center">
-                        <h3 className="font-semibold text-zinc-700 mb-1">Call Us</h3>
-                        <span className="text-zinc-500 text-sm">052-6750437</span>
-                    </div>
-                </motion.div>
             </div>
 
           </motion.div>

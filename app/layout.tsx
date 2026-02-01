@@ -34,17 +34,17 @@ export default function RootLayout({
       >
         {/* Orange Gradient - Top Right of PAGE (scrolls with content) */}
         <div 
-          className="absolute top-[-500px] md:top-[-300px] right-[-300px] -mr-40 -mt-40 w-[1200px] h-[1200px] rounded-full pointer-events-none opacity-80 md:opacity-100"
+          className="absolute top-[-800px] right-[-1200px] md:top-[-800px] md:right-[-800px] -mr-40 -mt-40 w-[1800px] h-[1800px] rounded-full pointer-events-none opacity-90 md:opacity-100"
           style={{
-            background: 'radial-gradient(circle, rgba(253, 171, 61, 0.18) 0%, rgba(253, 171, 61, 0.06) 40%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(253, 171, 61, 0.44) 0%, rgba(253, 171, 61, 0.20) 40%, transparent 75%)',
           }}
         />
         
         {/* Green Gradient - Bottom Left of PAGE (at the very bottom of all content) */}
         <div 
-          className="absolute bottom-[600px] left-[-300px] -ml-40 -mb-40 w-[1000px] h-[1000px] rounded-full pointer-events-none opacity-20"
+          className="absolute top-[100px] left-[-1000px] -ml-40 -mb-40 w-[1800px] h-[1800px] rounded-full pointer-events-none opacity-35"
           style={{
-            background: 'radial-gradient(circle, rgba(102, 148, 87, 0.2) 0%, rgba(102, 148, 87, 0.08) 30%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(102, 148, 87, 0.5) 0%, rgba(102, 148, 87, 0.25) 30%, transparent 75%)',
           }}
         />
 

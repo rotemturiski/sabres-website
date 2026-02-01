@@ -10,6 +10,9 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Header() {
+  const DONATE_URL =
+    "https://pay.sumit.co.il/2vcnc6/41lc8v/c/payment/?cartid=7e0fa9f6-2de2-43d9-8952-01ecd4030dd7";
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,23 +23,6 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
-
-  // Close modal on escape key
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsDonateOpen(false);
-    };
-    if (isDonateOpen) {
-      document.addEventListener("keydown", handleEscape);
-      document.body.style.overflow = "hidden";
-    }
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "";
-    };
-  }, [isDonateOpen]);
 
   const navLinks = [
     { name: "About", href: "#about" },
@@ -67,13 +53,20 @@ export function Header() {
             />
           </Link>
           <div className="h-6 w-px bg-zinc-200/50" />
-          <Image
-            src="/yahav.svg"
-            alt="Yahav"
-            width={60}
-            height={24}
-            className="h-6 w-auto"
-          />
+          <a
+            href="https://yahavil.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Yahav website"
+          >
+            <Image
+              src="/yahav.svg"
+              alt="Yahav"
+              width={60}
+              height={24}
+              className="h-6 w-auto"
+            />
+          </a>
         </div>
 
         {/* Desktop Nav */}
@@ -92,9 +85,11 @@ export function Header() {
               variant="white"
               size="sm"
               className="bg-primary text-white hover:bg-primary/90 border-none"
-              onClick={() => setIsDonateOpen(true)}
+              asChild
             >
-              Help Us Grow
+              <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">
+                Help Us Grow
+              </a>
             </Button>
             <Button variant="default" size="sm" asChild>
               <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">Apply Now</a>
@@ -133,9 +128,16 @@ export function Header() {
                 ))}
                 <Button
                   className="w-full max-w-xs bg-primary text-white hover:bg-primary/90"
-                  onClick={() => { setIsOpen(false); setIsDonateOpen(true); }}
+                  asChild
                 >
-                  Help Us Grow
+                  <a
+                    href={DONATE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Help Us Grow
+                  </a>
                 </Button>
                 <Button className="w-full max-w-xs" onClick={() => setIsOpen(false)} asChild>
                   <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">Apply Now</a>
@@ -145,56 +147,6 @@ export function Header() {
           )}
         </AnimatePresence>
       </Container>
-
-      {/* Donation Modal */}
-      <AnimatePresence>
-        {isDonateOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-          >
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-              onClick={() => setIsDonateOpen(false)}
-            />
-
-            {/* Modal */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: "spring", duration: 0.5 }}
-              className="relative bg-white rounded-2xl w-full max-w-[600px] h-[700px] max-h-[90vh] overflow-hidden"
-            >
-              {/* Header */}
-              <div className="flex items-center justify-between p-4 border-b border-zinc-100">
-                <h3 className="text-lg font-semibold text-zinc-800">Support Sabres</h3>
-                <button
-                  onClick={() => setIsDonateOpen(false)}
-                  className="p-2 rounded-full hover:bg-zinc-100 transition-colors"
-                  aria-label="Close donation modal"
-                >
-                  <X className="h-5 w-5 text-zinc-500" />
-                </button>
-              </div>
-
-              {/* Iframe */}
-              <iframe
-                src="https://pay.sumit.co.il/2vcnc6/41lc8v/c/payment/?cartid=7e0fa9f6-2de2-43d9-8952-01ecd4030dd7"
-                className="w-full h-[calc(100%-60px)]"
-                title="Donate to Sabres"
-                allow="payment"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </header>
   );
 }

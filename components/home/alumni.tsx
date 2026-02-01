@@ -46,13 +46,13 @@ export function Alumni() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="relative w-full h-32 md:h-40 rounded-2xl md:rounded-none md:rounded-t-4xl  overflow-hidden mb-6"
+          className="relative w-full h-40 md:h-[320px] rounded-2xl md:rounded-none md:rounded-t-4xl overflow-hidden mb-6"
         >
           <Image
             src="/png/1.jpeg"
             alt="Sabres alumni"
             fill
-            className="object-cover md:object-[center_40%]"
+            className="object-cover object-[center_45%]"
           />
         </motion.div>
 

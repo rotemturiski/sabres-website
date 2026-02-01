@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export function OurStory() {
   const team = [
-    { name: "Shir Lever", image: "/staff/shir.jpeg" },
-    { name: "Rotem Fredi Turiski", image: "/staff/rotem.jpeg" },
-    { name: "Naomi Rubin", image: "/staff/neomi.jpg" },
-    { name: "Kamryn Felbel", image: "/staff/kami.jpg" },
-    { name: "Naama Novak Zohar", image: "/staff/nama.jpg" },
+    { name: "Rotem Fredi Turiski", title: "Co-Founder & CEO", image: "/staff/rotem.jpeg" },
+    { name: "Shir Lever", title: "Co-Founder & VP", image: "/staff/shir.jpeg" },
+    { name: "Naomi Rubin", title: "Co-Founder & Head of Operations", image: "/staff/neomi.jpg" },
+    { name: "Naama Novak Zohar", title: "Co-Founder & Head of Programming", image: "/staff/nama.jpg" },
+    { name: "Kamryn Felbel", title: "Co-Founder & Head of Alumni", image: "/staff/kami.jpg" },
   ];
 
   return (
@@ -53,11 +53,18 @@ export function OurStory() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className={
+                      member.name === "Shir Lever"
+                        ? "object-cover object-[center_20%]"
+                        : "object-cover"
+                    }
                   />
                 </div>
                 <p className="mt-2 text-sm font-medium text-foreground/80 text-center max-w-[100px]">
                   {member.name}
+                </p>
+                <p className="text-xs text-muted-foreground text-center max-w-[140px]">
+                  {member.title}
                 </p>
               </div>
             ))}
