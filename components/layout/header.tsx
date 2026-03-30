@@ -120,7 +120,7 @@ export function Header() {
               </a>
             </Button>
             <Button variant="default" size="sm" asChild>
-              <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
+              <a href="https://forms.gle/BhaE6ytZmjeur7LD7" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
             </Button>
           </div>
         </nav>
@@ -182,7 +182,7 @@ export function Header() {
                   </a>
                 </Button>
                 <Button className="w-full max-w-xs" onClick={() => setIsOpen(false)} asChild>
-                  <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
+                  <a href="https://forms.gle/BhaE6ytZmjeur7LD7" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
                 </Button>
               </div>
             </motion.div>

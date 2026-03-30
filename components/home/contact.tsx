@@ -33,7 +33,7 @@ export function Contact() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:py-8 pb-8">
                <Button size="lg" className="h-14 px-10 text-lg w-full sm:w-auto" asChild>
-                <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/BhaE6ytZmjeur7LD7" target="_blank" rel="noopener noreferrer">
                    {t.applyCta}{" "}
                    <ArrowRight
                      className={`${rtl ? "mr-2 rotate-180" : "ml-2"} h-5 w-5`}

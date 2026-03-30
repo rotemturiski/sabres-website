@@ -123,7 +123,7 @@ export const content: Record<
         { name: "Contact", href: "#contact" },
       ],
       donateCta: "Help Us Grow",
-      applyCta: "Apply Now",
+      applyCta: "Early Apply Now",
       langToggle: {
         ariaLabel: "Switch language to Hebrew",
         labelWhenEn: "עברית",
@@ -150,12 +150,12 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "Applications Open for 2026 Cohort",
+        badge: "Early Applications Open for Next Cohort",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
           "Connecting new Olim and veteran Israelis to foster mutual understanding and lasting human connections.",
-        applyNow: "Apply Now",
+        applyNow: "Early Apply Now",
         learnMore: "Learn More",
       },
       about: {
@@ -350,7 +350,7 @@ export const content: Record<
         { name: "צרו קשר", href: "#contact" },
       ],
       donateCta: "תמכו בעשייה שלנו",
-      applyCta: "הגישו מועמדות",
+      applyCta: "הרשמה מוקדמת",
       langToggle: {
         ariaLabel: "החלפת שפה לאנגלית",
         labelWhenEn: "עברית",
@@ -377,12 +377,12 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "ההרשמה למחזור 2026 פתוחה",
+        badge: "הרשמה מוקדמת למחזור הבא פתוחה",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
           "מחברים בין עולים חדשים לבין ישראלים ותיקים כדי לטפח הבנה הדדית וקשרים אנושיים שנשארים לאורך זמן.",
-        applyNow: "הגישו מועמדות",
+        applyNow: "הרשמה מוקדמת",
         learnMore: "למדו עוד",
       },
       about: {

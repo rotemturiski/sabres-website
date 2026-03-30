@@ -62,7 +62,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://forms.gle/sSE5QR2auWcwPUH5A"
+                  href="https://forms.gle/BhaE6ytZmjeur7LD7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-500 hover:text-primary transition-colors"

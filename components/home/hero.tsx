@@ -41,7 +41,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Button size="lg" className="h-12 px-8 text-base" asChild>
-              <a href="https://forms.gle/sSE5QR2auWcwPUH5A" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/BhaE6ytZmjeur7LD7" target="_blank" rel="noopener noreferrer">
                 {t.applyNow}{" "}
                 <ArrowRight
                   className={`${rtl ? "mr-2 rotate-180" : "ml-2"} h-4 w-4`}
