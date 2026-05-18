@@ -21,7 +21,7 @@ export const seoContent: Record<
     description:
       "Sabres is a group-based aliya integration program connecting new olim and veteran Israelis through shared experiences, open dialogue, and lasting friendships.",
     keywords:
-      "sabres, aliya, olim, new immigrants Israel, zionism, Israeli community, olim chadashim, aliyah program",
+      "sabres, aliya, olim, new immigrants Israel, zionism, Israeli community, olim chadashim, aliyah program, meet Israelis, olim community, aliyah integration program, young olim, Hebrew Israeli friends, aliyah for young adults, Israeli mentorship, new olim social network",
     ogLocale: "en_US",
   },
   he: {
@@ -29,7 +29,7 @@ export const seoContent: Record<
     description:
       "סברס היא תכנית קבוצתית שנולדה מתכנית רבין למנהיגות, המחברת בין עולים חדשים לישראלים ותיקים דרך חוויות משותפות, שיח פתוח וחברויות לאורך זמן.",
     keywords:
-      "סברס, תכנית רבין, עלייה, עליה, ציונות, עולים חדשים, קליטת עלייה, קהילה ישראלית",
+      "סברס, תכנית רבין, עלייה, עליה, ציונות, עולים חדשים, קליטת עלייה, קהילה ישראלית, חברויות בישראל, קהילה לעולים, צברים ועולים, מנהיגות צעירה, עולים בני 20-30, אנגלו-סקסים בישראל, אולפן חברתי",
     ogLocale: "he_IL",
   },
 };
