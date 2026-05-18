@@ -21,9 +21,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
     apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.webmanifest",
