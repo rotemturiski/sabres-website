@@ -19,7 +19,7 @@ export const seoContent: Record<
   en: {
     title: "Sabres | Zionism, Friendship, Belonging",
     description:
-      "Sabres is a group-based aliya integration program connecting new olim and veteran Israelis through shared experiences, open dialogue, and lasting friendships.",
+      "A community for young adults building bridges between Olim and veteran Israelis. Through shared experiences and open dialogue - find belonging, friendship, and purpose.",
     keywords:
       "sabres, aliya, olim, new immigrants Israel, zionism, Israeli community, olim chadashim, aliyah program, meet Israelis, olim community, aliyah integration program, young olim, Hebrew Israeli friends, aliyah for young adults, Israeli mentorship, new olim social network",
     ogLocale: "en_US",
@@ -27,7 +27,7 @@ export const seoContent: Record<
   he: {
     title: "סברס | תכנית לעולים חדשים וישראלים — עלייה, ציונות, שייכות",
     description:
-      "סברס היא תכנית קבוצתית שנולדה מתכנית רבין למנהיגות, המחברת בין עולים חדשים לישראלים ותיקים דרך חוויות משותפות, שיח פתוח וחברויות לאורך זמן.",
+      "קהילה לצעירים שבונה גשרים בין עולים חדשים לישראלים ותיקים. דרך חוויות משותפות ושיח פתוח - מוצאים שייכות, חברות ומשמעות.",
     keywords:
       "סברס, תכנית רבין, עלייה, עליה, ציונות, עולים חדשים, קליטת עלייה, קהילה ישראלית, חברויות בישראל, קהילה לעולים, צברים ועולים, מנהיגות צעירה, עולים בני 20-30, אנגלו-סקסים בישראל, אולפן חברתי",
     ogLocale: "he_IL",
