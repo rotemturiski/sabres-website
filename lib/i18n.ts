@@ -110,6 +110,22 @@ export const content: Record<
         emailCardTitle: string;
         instagramCardTitle: string;
       };
+      press: {
+        heading: string;
+        subheading: string;
+        readHebrew: string;
+        readEnglish: string;
+        items: Array<{
+          outlet: string;
+          date: string;
+          title: string;
+          excerpt: string;
+          image: string;
+          imageAlt: string;
+          hrefHe: string;
+          hrefEn: string;
+        }>;
+      };
     };
   }
 > = {
@@ -118,6 +134,7 @@ export const content: Record<
       navLinks: [
         { name: "About", href: "#about" },
         { name: "Alumni", href: "#alumni" },
+        { name: "In the News", href: "#press" },
         { name: "FAQ", href: "#faq" },
         { name: "Our Story", href: "#our-story" },
         { name: "Contact", href: "#contact" },
@@ -338,6 +355,25 @@ export const content: Record<
         emailCardTitle: "Email Us",
         instagramCardTitle: "Follow Us",
       },
+      press: {
+        heading: "Sabres in the News",
+        subheading: "What the media is saying about our community.",
+        readHebrew: "Read in Hebrew",
+        readEnglish: "Read in English",
+        items: [
+          {
+            outlet: "Israel Hayom",
+            date: "May 2026",
+            title: "Opening the Heart",
+            excerpt:
+              "“It gave me the confidence that I won't feel lost in this country anymore.” A feature on how the Sabres community brings together new Olim and veteran Israelis.",
+            image: "/press/israel-hayom-2026.jpg",
+            imageAlt: "The Sabres feature in Israel Hayom",
+            hrefHe: "https://digital-edition.israelhayom.co.il/israel-hayom/20260531",
+            hrefEn: "https://www.israelhayom.com/2026/05/27/sabres-community-aliyah-integration-israel/",
+          },
+        ],
+      },
     },
   },
   he: {
@@ -345,6 +381,7 @@ export const content: Record<
       navLinks: [
         { name: "עלינו", href: "#about" },
         { name: "בוגרים", href: "#alumni" },
+        { name: "בחדשות", href: "#press" },
         { name: "שאלות נפוצות", href: "#faq" },
         { name: "הסיפור שלנו", href: "#our-story" },
         { name: "צרו קשר", href: "#contact" },
@@ -564,6 +601,25 @@ export const content: Record<
         applyCta: "הגש/י מועמדות למחזור 2026",
         emailCardTitle: "שלחו מייל",
         instagramCardTitle: "עקבו אחרינו",
+      },
+      press: {
+        heading: "סברס בחדשות",
+        subheading: "מה כותבים עלינו בתקשורת.",
+        readHebrew: "לכתבה בעברית",
+        readEnglish: "לכתבה באנגלית",
+        items: [
+          {
+            outlet: "ישראל היום",
+            date: "מאי 2026",
+            title: "פותחים את הלב",
+            excerpt:
+              "”זה נתן לי את הביטחון שכבר לא ארגיש אבוד בארץ.” כתבה על קהילת סברס, שמפגישה עולים חדשים עם ישראלים ותיקים ליצירת קהילה חזקה ושווה.",
+            image: "/press/israel-hayom-2026.jpg",
+            imageAlt: "הכתבה על סברס בעיתון ישראל היום",
+            hrefHe: "https://digital-edition.israelhayom.co.il/israel-hayom/20260531",
+            hrefEn: "https://www.israelhayom.com/2026/05/27/sabres-community-aliyah-integration-israel/",
+          },
+        ],
       },
     },
   },

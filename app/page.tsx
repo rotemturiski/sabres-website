@@ -4,6 +4,7 @@ import { About } from "@/components/home/about";
 import { Program } from "@/components/home/program";
 import { Audience } from "@/components/home/audience";
 import { Alumni } from "@/components/home/alumni";
+import { Press } from "@/components/home/press";
 import { FAQ } from "@/components/home/faq";
 import { OurStory } from "@/components/home/our-story";
 import { Contact } from "@/components/home/contact";
@@ -83,6 +84,7 @@ export default function Home() {
         {/* <Themes /> */}
         <Program />
         <Alumni />
+        <Press />
         <OurStory />
         <Audience />
         <FAQ />
