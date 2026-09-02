@@ -140,7 +140,7 @@ export const content: Record<
         { name: "Contact", href: "#contact" },
       ],
       donateCta: "Help Us Grow",
-      applyCta: "Early Apply Now",
+      applyCta: "Leave Your Details",
       langToggle: {
         ariaLabel: "Switch language to Hebrew",
         labelWhenEn: "עברית",
@@ -161,18 +161,18 @@ export const content: Record<
         about: "About",
         timeline: "Timeline",
         themes: "Themes",
-        apply: "Apply",
+        apply: "Leave Your Details",
       },
       copyright: "Sabres Community. All rights reserved.",
     },
     home: {
       hero: {
-        badge: "Early Applications Open for Next Cohort",
+        badge: "Applications for Cohort 4 Open in Early October",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
           "Connecting new Olim and veteran Israelis to foster mutual understanding and lasting human connections.",
-        applyNow: "Early Apply Now",
+        applyNow: "Leave Your Details",
         learnMore: "Learn More",
       },
       about: {
@@ -202,7 +202,7 @@ export const content: Record<
       program: {
         heading: "Program Structure",
         subheading:
-          "A structured five-stage journey designed to create meaningful connections.",
+          "A structured five-stage journey designed to create meaningful connections. Cohort 4 runs from November 2026 through February 2027.",
         steps: [
           {
             title: "Application",
@@ -216,7 +216,7 @@ export const content: Record<
           {
             title: "Group Sessions",
             description:
-              "Seven tri-weekly meetings including discussions, workshops, dinners, and trips.",
+              "Seven meetings every two weeks including discussions, workshops, dinners, and trips.",
           },
           {
             title: "Independent Meetups",
@@ -230,7 +230,7 @@ export const content: Record<
           },
         ],
         cohortPeriodLabel: "Cohort Period",
-        cohortPeriodValue: "Half a year",
+        cohortPeriodValue: "3 Months",
         sessionsLabel: "Sessions",
         sessionsValue: "7",
       },
@@ -255,7 +255,7 @@ export const content: Record<
               "Sabres met and exceeded every expectation I had. Everyone involved was amazing and I know I've made some friends for life.",
           },
         ],
-        cta: "I Want In!",
+        cta: "Leave Your Details",
       },
       ourStory: {
         heading: "Our Story",
@@ -295,7 +295,7 @@ export const content: Record<
         description:
           "We are looking for Olim and Native-born Israelis who want to be part of something bigger.",
         registrationFeeHeading: "Registration Fee",
-        registrationFeeAmount: "₪250",
+        registrationFeeAmount: "₪500",
         registrationFeeNote: "Commitment fee for the full program",
         requirementsHeading: "Requirements",
         requirements: [
@@ -317,7 +317,7 @@ export const content: Record<
           {
             question: "How much does the program cost?",
             answer:
-              "The full program costs 250 NIS in total, covering all sessions. The fee helps ensure commitment, but Sabres is subsidized so cost won't be a barrier to participation.",
+              "The full program costs 500 NIS in total, covering all sessions. The fee helps ensure commitment, but Sabres is subsidized so cost won't be a barrier to participation.",
           },
           {
             question: "What actually happens in the program?",
@@ -351,7 +351,7 @@ export const content: Record<
         heading: "Ready to Connect?",
         subheading:
           "Join the Sabres network. Managed by professionals from top industries, supported by talented leaders, and built for you.",
-        applyCta: "Apply for 2026 Cohort",
+        applyCta: "Leave Your Details",
         emailCardTitle: "Email Us",
         instagramCardTitle: "Follow Us",
       },
@@ -387,7 +387,7 @@ export const content: Record<
         { name: "צרו קשר", href: "#contact" },
       ],
       donateCta: "תמכו בעשייה שלנו",
-      applyCta: "הרשמה מוקדמת",
+      applyCta: "השאירו פרטים",
       langToggle: {
         ariaLabel: "החלפת שפה לאנגלית",
         labelWhenEn: "עברית",
@@ -408,18 +408,18 @@ export const content: Record<
         about: "עלינו",
         timeline: "מבנה התכנית",
         themes: "נושאי התכנית",
-        apply: "הגשת מועמדות",
+        apply: "השאירו פרטים",
       },
       copyright: "Sabres Community. כל הזכויות שמורות.",
     },
     home: {
       hero: {
-        badge: "הרשמה מוקדמת למחזור הבא פתוחה",
+        badge: "ההרשמה למחזור 4 נפתחת בתחילת אוקטובר",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
           "מחברים בין עולים חדשים לבין ישראלים ותיקים כדי לטפח הבנה הדדית וקשרים אנושיים שנשארים לאורך זמן.",
-        applyNow: "הרשמה מוקדמת",
+        applyNow: "השאירו פרטים",
         learnMore: "למדו עוד",
       },
       about: {
@@ -437,7 +437,7 @@ export const content: Record<
           {
             title: "המשימה שלנו",
             description:
-              " לבנות חברויות בין עולים לבין ישראלים ותיקים, כך ששני הצדדים יחוו חיבור אמיתי ויחזקו את תחושת השייכות והאחריות ההדדית בחברה השיראלית.",
+              " לבנות חברויות בין עולים לבין ישראלים ותיקים, כך ששני הצדדים יחוו חיבור אמיתי ויחזקו את תחושת השייכות והאחריות ההדדית בחברה הישראלית.",
           },
           {
             title: "החזון שלנו",
@@ -449,7 +449,7 @@ export const content: Record<
       program: {
         heading: "מבנה התכנית",
         subheading:
-          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים.",
+          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מחזור 4 יתקיים מנובמבר 2026 עד פברואר 2027.",
         steps: [
           {
             title: "הגשת מועמדות",
@@ -463,7 +463,7 @@ export const content: Record<
           {
             title: "מפגשי קבוצה",
             description:
-              "שבעה מפגשים אחת לשלושה שבועות הכוללים שיחות, סדנאות, ארוחות וטיולים.",
+              "שבעה מפגשים אחת לשבועיים הכוללים שיחות, סדנאות, ארוחות וטיולים.",
           },
           {
             title: "מפגשים עצמאיים",
@@ -477,7 +477,7 @@ export const content: Record<
           },
         ],
         cohortPeriodLabel: "משך המחזור",
-        cohortPeriodValue: "חצי שנה",
+        cohortPeriodValue: "3 חודשים",
         sessionsLabel: "מפגשים",
         sessionsValue: "7",
       },
@@ -502,7 +502,7 @@ export const content: Record<
               "סברס ענתה על כל הציפיות שלי ואף מעבר לכך. כל מי שהיה מעורב היה מדהים, ואני יודע שיצאתי עם חברים לחיים.",
           },
         ],
-        cta: "אני רוצה להצטרף!",
+        cta: "השאירו פרטים",
       },
       ourStory: {
         heading: "הסיפור שלנו",
@@ -542,7 +542,7 @@ export const content: Record<
         description:
           "אנחנו מחפשים עולים וישראלים ילידי הארץ שרוצים להיות חלק ממשהו גדול יותר.",
         registrationFeeHeading: "דמי הרשמה",
-        registrationFeeAmount: "₪250",
+        registrationFeeAmount: "₪500",
         registrationFeeNote: "דמי רצינות עבור התכנית המלאה",
         requirementsHeading: "דרישות",
         requirements: [
@@ -564,12 +564,12 @@ export const content: Record<
           {
             question: "כמה עולה להשתתף בתכנית?",
             answer:
-              "עלות התכנית המלאה היא 250 ש\"ח בסך הכול, והיא כוללת את כל המפגשים. התשלום עוזר לשמור על מחויבות, אבל התכנית מסובסדת כדי שלא תהיה מניעה כלכלית להשתתפות.",
+              "עלות התכנית המלאה היא 500 ש\"ח בסך הכול, והיא כוללת את כל המפגשים. התשלום עוזר לשמור על מחויבות, אבל התכנית מסובסדת כדי שלא תהיה מניעה כלכלית להשתתפות.",
           },
           {
             question: "מה קורה בפועל בתכנית?",
             answer:
-              "המשתתפים נפגשים בקבוצה קטנה ומונחית שבע פעמים לאורך כמה חודשים. המפגשים כוללים למשל ארוחה משותפת שבה כל אחד מביא אוכל שמייצג את המקום שממנו הוא מגיע, טיול , למידה ושיחות פתוחות, וגם זמן פשוט ביחד  -   בחוף הים.",
+              "המשתתפים נפגשים בקבוצה קטנה ומונחית שבע פעמים לאורך כמה חודשים. המפגשים כוללים למשל ארוחה משותפת שבה כל אחד מביא אוכל שמייצג את המקום שממנו הוא מגיע, טיול, למידה ושיחות פתוחות, וגם זמן פשוט ביחד  -   בחוף הים.",
           },
           {
             question: "זו תכנית פוליטית?",
@@ -598,7 +598,7 @@ export const content: Record<
         heading: "מוכנים להתחבר?",
         subheading:
           "",
-        applyCta: "הגש/י מועמדות למחזור 2026",
+        applyCta: "השאירו פרטים",
         emailCardTitle: "שלחו מייל",
         instagramCardTitle: "עקבו אחרינו",
       },
