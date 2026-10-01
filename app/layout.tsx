@@ -22,9 +22,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  icons: {
-    apple: "/apple-touch-icon.png",
-  },
+  // Icons come from app/icon.png and app/apple-icon.png (file-based metadata).
+  // Declaring `icons` here replaces that set entirely, which is how the site
+  // ended up emitting only a 404ing apple-touch-icon and no <link rel="icon">.
   manifest: "/manifest.webmanifest",
 };
 
