@@ -1,6 +1,6 @@
 import type { Language } from "./i18n";
 
-export const SITE_URL = "https://sabres.community";
+export const SITE_URL = "https://www.sabres.community";
 export const OG_IMAGE_PATH = "/og-image.png";
 export const ORGANIZATION_NAME = "Sabres Community";
 export const ORG_EMAIL = "sabres.projects@gmail.com";
