@@ -6,7 +6,9 @@ import { Footer } from "@/components/layout/footer";
 import { HtmlLangDir } from "@/components/i18n/HtmlLangDir";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Suspense } from "react";
+import { headers } from "next/headers";
 import { SITE_URL } from "@/lib/seo";
+import { isRtl, type Language } from "@/lib/i18n";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,13 +28,22 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Set by middleware from the ?lng= query param, so the served HTML carries the
+  // right language for crawlers. HtmlLangDir keeps it in sync after a soft
+  // navigation from the language toggle.
+  const lang: Language = (await headers()).get("x-lang") === "he" ? "he" : "en";
+
   return (
-    <html lang="en" className="scroll-smooth overflow-x-clip">
+    <html
+      lang={lang}
+      dir={isRtl(lang) ? "rtl" : "ltr"}
+      className="scroll-smooth overflow-x-clip"
+    >
       <body
         className={`${poppins.className} ${geistMono.variable} antialiased min-h-screen flex flex-col relative`}
       >
