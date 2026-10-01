@@ -78,7 +78,7 @@ export function Alumni() {
           className="text-center"
         >
           <Button size="lg" className="h-14 px-10 text-lg" asChild>
-            <a href="https://forms.gle/BhaE6ytZmjeur7LD7" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/MJ96RhapPSNzCzUe9" target="_blank" rel="noopener noreferrer">
               {t.cta}
             </a>
           </Button>
