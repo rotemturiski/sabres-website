@@ -11,7 +11,6 @@ import { Contact } from "@/components/home/contact";
 import { Suspense } from "react";
 import {
   SITE_URL,
-  OG_IMAGE_PATH,
   ORGANIZATION_NAME,
   seoContent,
 } from "@/lib/seo";
@@ -26,7 +25,6 @@ export async function generateMetadata({
   const lang: Language = params.lng === "he" ? "he" : "en";
   const seo = seoContent[lang];
   const canonicalUrl = lang === "he" ? `${SITE_URL}/?lng=he` : SITE_URL;
-  const ogImageUrl = `${SITE_URL}${OG_IMAGE_PATH}`;
 
   return {
     title: seo.title,
@@ -57,20 +55,12 @@ export async function generateMetadata({
       siteName: ORGANIZATION_NAME,
       locale: seo.ogLocale,
       type: "website",
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: ORGANIZATION_NAME,
-        },
-      ],
+      // Image comes from app/opengraph-image.tsx (file-based metadata).
     },
     twitter: {
       card: "summary_large_image",
       title: seo.title,
       description: seo.description,
-      images: [ogImageUrl],
     },
   };
 }
