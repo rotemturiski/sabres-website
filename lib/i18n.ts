@@ -140,7 +140,7 @@ export const content: Record<
         { name: "Contact", href: "#contact" },
       ],
       donateCta: "Help Us Grow",
-      applyCta: "Apply Now",
+      applyCta: "Leave Your Details",
       langToggle: {
         ariaLabel: "Switch language to Hebrew",
         labelWhenEn: "עברית",
@@ -161,18 +161,18 @@ export const content: Record<
         about: "About",
         timeline: "Timeline",
         themes: "Themes",
-        apply: "Apply",
+        apply: "Leave Your Details",
       },
       copyright: "Sabres Community. All rights reserved.",
     },
     home: {
       hero: {
-        badge: "Applications for Cohort 4 Are Open",
+        badge: "Applications for Cohort 4 Are Closed",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
           "Connecting new Olim and veteran Israelis to foster mutual understanding and lasting human connections.",
-        applyNow: "Apply Now",
+        applyNow: "Leave Your Details",
         learnMore: "Learn More",
       },
       about: {
@@ -255,7 +255,7 @@ export const content: Record<
               "Sabres met and exceeded every expectation I had. Everyone involved was amazing and I know I've made some friends for life.",
           },
         ],
-        cta: "I Want In!",
+        cta: "Leave Your Details",
       },
       ourStory: {
         heading: "Our Story",
@@ -351,7 +351,7 @@ export const content: Record<
         heading: "Ready to Connect?",
         subheading:
           "Join the Sabres network. Managed by professionals from top industries, supported by talented leaders, and built for you.",
-        applyCta: "Apply for Cohort 4",
+        applyCta: "Leave Your Details",
         emailCardTitle: "Email Us",
         instagramCardTitle: "Follow Us",
       },
@@ -387,7 +387,7 @@ export const content: Record<
         { name: "צרו קשר", href: "#contact" },
       ],
       donateCta: "תמכו בעשייה שלנו",
-      applyCta: "להרשמה",
+      applyCta: "השאירו פרטים",
       langToggle: {
         ariaLabel: "החלפת שפה לאנגלית",
         labelWhenEn: "עברית",
@@ -408,18 +408,18 @@ export const content: Record<
         about: "עלינו",
         timeline: "מבנה התכנית",
         themes: "נושאי התכנית",
-        apply: "הרשמה",
+        apply: "השאירו פרטים",
       },
       copyright: "Sabres Community. כל הזכויות שמורות.",
     },
     home: {
       hero: {
-        badge: "ההרשמה למחזור 4 פתוחה",
+        badge: "ההרשמה למחזור 4 נסגרה",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
           "מחברים בין עולים חדשים לבין ישראלים ותיקים כדי לטפח הבנה הדדית וקשרים אנושיים שנשארים לאורך זמן.",
-        applyNow: "להרשמה",
+        applyNow: "השאירו פרטים",
         learnMore: "למדו עוד",
       },
       about: {
@@ -502,7 +502,7 @@ export const content: Record<
               "סברס ענתה על כל הציפיות שלי ואף מעבר לכך. כל מי שהיה מעורב היה מדהים, ואני יודע שיצאתי עם חברים לחיים.",
           },
         ],
-        cta: "אני רוצה להצטרף!",
+        cta: "השאירו פרטים",
       },
       ourStory: {
         heading: "הסיפור שלנו",
@@ -598,7 +598,7 @@ export const content: Record<
         heading: "מוכנים להתחבר?",
         subheading:
           "",
-        applyCta: "הגש/י מועמדות למחזור 4",
+        applyCta: "השאירו פרטים",
         emailCardTitle: "שלחו מייל",
         instagramCardTitle: "עקבו אחרינו",
       },
