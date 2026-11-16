@@ -167,7 +167,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "Cohort 5 in Tel Aviv, Cohort 1 in Jerusalem",
+        badge: "Sabres Comes to Jerusalem - April 2027",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
@@ -414,7 +414,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "מחזור 5 בתל אביב, מחזור 1 בירושלים",
+        badge: "סברס מגיעה לירושלים — אפריל 2027",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
