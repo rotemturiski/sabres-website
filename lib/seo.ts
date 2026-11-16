@@ -8,6 +8,17 @@ export const ORG_INSTAGRAM = "https://instagram.com/sabres.community";
 // whichever is live. Change it here and all six links follow.
 export const FORM_URL = "https://forms.gle/ep3gq8zFQaEYeC8X7";
 
+// Every date on the site that names the current cohort. The badge, the
+// programme subheading and the FAQ answer all read from here, so opening a
+// new cohort is one edit instead of three.
+//   start  - the month it opens, for the badge
+//   window - the full run, phrased the way each language says it so that it
+//            drops straight into a sentence
+export const COHORT_DATES: Record<Language, { start: string; window: string }> = {
+  en: { start: "April 2027", window: "April through July 2027" },
+  he: { start: "אפריל 2027", window: "מאפריל עד יולי 2027" },
+};
+
 export const PARENT_ORG_NAME = "Yahav - Mechanchim LeTzionut";
 
 export const seoContent: Record<

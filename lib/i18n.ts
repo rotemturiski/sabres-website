@@ -1,3 +1,5 @@
+import { COHORT_DATES } from "./seo";
+
 export type Language = "en" | "he";
 
 // Accepts either Next.js ReadonlyURLSearchParams or URLSearchParams-like objects.
@@ -171,7 +173,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "Sabres Comes to Jerusalem - April 2027",
+        badge: `Sabres Comes to Jerusalem - ${COHORT_DATES.en.start}`,
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
@@ -206,7 +208,7 @@ export const content: Record<
       program: {
         heading: "Program Structure",
         subheading:
-          "A structured five-stage journey designed to create meaningful connections. From April through July 2027, two cohorts run side by side: our fifth in Tel Aviv, and our very first in Jerusalem.",
+          `A structured five-stage journey designed to create meaningful connections. From ${COHORT_DATES.en.window}, two cohorts run side by side: our fifth in Tel Aviv, and our very first in Jerusalem.`,
         steps: [
           {
             title: "Application",
@@ -343,7 +345,7 @@ export const content: Record<
           {
             question: "Where and when do the meetings take place?",
             answer:
-              "Each group meets in its own city: the Tel Aviv group holds most of its meetings in Tel Aviv, and the Jerusalem group most of its meetings in Jerusalem. The next two cohorts  -  our fifth in Tel Aviv and our first in Jerusalem  -  start together and run from April through July 2027. A few meetings, like the trip, take the group out of the city to other parts of the country.",
+              `Each group meets in its own city: the Tel Aviv group holds most of its meetings in Tel Aviv, and the Jerusalem group most of its meetings in Jerusalem. The next two cohorts  -  our fifth in Tel Aviv and our first in Jerusalem  -  start together and run from ${COHORT_DATES.en.window}. A few meetings, like the trip, take the group out of the city to other parts of the country.`,
           },
           {
             question: "Is this a political program?",
@@ -435,7 +437,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "סברס מגיעה לירושלים — אפריל 2027",
+        badge: `סברס מגיעה לירושלים — ${COHORT_DATES.he.start}`,
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
@@ -470,7 +472,7 @@ export const content: Record<
       program: {
         heading: "מבנה התכנית",
         subheading:
-          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מאפריל עד יולי 2027 יוצאים לדרך שני מחזורים במקביל: החמישי בתל אביב, והראשון בירושלים.",
+          `מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. ${COHORT_DATES.he.window} יוצאים לדרך שני מחזורים במקביל: החמישי בתל אביב, והראשון בירושלים.`,
         steps: [
           {
             title: "הגשת מועמדות",
@@ -607,7 +609,7 @@ export const content: Record<
           {
             question: "איפה ומתי מתקיימים המפגשים?",
             answer:
-              "כל קבוצה נפגשת בעיר שלה: קבוצת תל אביב ברוב המפגשים בתל אביב, וקבוצת ירושלים ברוב המפגשים בירושלים. שני המחזורים הבאים  -  מחזור 5 בתל אביב ומחזור 1 בירושלים  -  יוצאים לדרך יחד ונמשכים מאפריל עד יולי 2027. חלק מהמפגשים, כמו הטיול, יוצאים מהעיר אל מקומות אחרים בארץ.",
+              `כל קבוצה נפגשת בעיר שלה: קבוצת תל אביב ברוב המפגשים בתל אביב, וקבוצת ירושלים ברוב המפגשים בירושלים. שני המחזורים הבאים  -  מחזור 5 בתל אביב ומחזור 1 בירושלים  -  יוצאים לדרך יחד ונמשכים ${COHORT_DATES.he.window}. חלק מהמפגשים, כמו הטיול, יוצאים מהעיר אל מקומות אחרים בארץ.`,
           },
           {
             question: "זו תכנית פוליטית?",
