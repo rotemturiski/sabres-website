@@ -341,6 +341,11 @@ export const content: Record<
               "Participants meet in a small, facilitated group seven times over several months. Sessions include things like a shared meal where everyone brings food that represents where they come from, a group hike or trip around the country, learning and open conversations, and simple hangouts  -  like spending time together at the beach.",
           },
           {
+            question: "Where do the meetings take place?",
+            answer:
+              "Each group meets in its own city. The Tel Aviv group holds most of its meetings in Tel Aviv, and the Jerusalem group most of its meetings in Jerusalem. A few meetings, like the trip, take the group out of the city to other parts of the country.",
+          },
+          {
             question: "Is this a political program?",
             answer:
               "No. Sabres is not affiliated with any political party or religious movement. The program creates space for different perspectives and personal experiences, without promoting a specific agenda.",
@@ -598,6 +603,11 @@ export const content: Record<
             question: "מה קורה בפועל בתכנית?",
             answer:
               "המשתתפים נפגשים בקבוצה קטנה ומונחית שבע פעמים לאורך כמה חודשים. המפגשים כוללים למשל ארוחה משותפת שבה כל אחד מביא אוכל שמייצג את המקום שממנו הוא מגיע, טיול, למידה ושיחות פתוחות, וגם זמן פשוט ביחד  -   בחוף הים.",
+          },
+          {
+            question: "איפה מתקיימים המפגשים?",
+            answer:
+              "כל קבוצה נפגשת בעיר שלה. קבוצת תל אביב נפגשת ברוב המפגשים בתל אביב, וקבוצת ירושלים ברוב המפגשים בירושלים. חלק מהמפגשים, כמו הטיול, יוצאים מהעיר אל מקומות אחרים בארץ.",
           },
           {
             question: "זו תכנית פוליטית?",
