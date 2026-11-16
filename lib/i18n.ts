@@ -167,7 +167,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "The Next Cohort Is Coming",
+        badge: "Cohort 5 Is Coming - Now in Jerusalem Too",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
@@ -202,7 +202,7 @@ export const content: Record<
       program: {
         heading: "Program Structure",
         subheading:
-          "A structured five-stage journey designed to create meaningful connections. Cohort 4 runs from November 2026 through February 2027.",
+          "A structured five-stage journey designed to create meaningful connections. Cohort 5 runs from April through July 2027 - and for the first time, in two cities: Tel Aviv and Jerusalem.",
         steps: [
           {
             title: "Application",
@@ -230,7 +230,7 @@ export const content: Record<
           },
         ],
         cohortPeriodLabel: "Cohort Period",
-        cohortPeriodValue: "3 Months",
+        cohortPeriodValue: "4 Months",
         sessionsLabel: "Sessions",
         sessionsValue: "7",
       },
@@ -414,7 +414,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "המחזור הבא בדרך",
+        badge: "מחזור 5 יוצא לדרך — והפעם גם בירושלים",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
@@ -449,7 +449,7 @@ export const content: Record<
       program: {
         heading: "מבנה התכנית",
         subheading:
-          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מחזור 4 יתקיים מנובמבר 2026 עד פברואר 2027.",
+          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מחזור 5 יתקיים מאפריל עד יולי 2027 — ולראשונה בשתי ערים: תל אביב וירושלים.",
         steps: [
           {
             title: "הגשת מועמדות",
@@ -477,7 +477,7 @@ export const content: Record<
           },
         ],
         cohortPeriodLabel: "משך המחזור",
-        cohortPeriodValue: "3 חודשים",
+        cohortPeriodValue: "4 חודשים",
         sessionsLabel: "מפגשים",
         sessionsValue: "7",
       },
