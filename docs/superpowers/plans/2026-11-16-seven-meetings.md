@@ -332,3 +332,33 @@ Expected: all four Hebrew strings and all three English strings.
 **Type consistency.** `meetings` is `{ label: string; items: string[] }` in Task 1 Step 1, written with exactly those two keys in Steps 3 and 5, and read as `t.label` / `t.items` in Task 2 Step 1. The component is `SevenMeetings` in its definition, its import, and its call site.
 
 **Known deviation from the skill's default.** There are no unit tests because the project has no test runner, and installing one for a presentational component is scope this feature did not ask for. Each task still has a red state and a green state: Task 1 uses `tsc` failing on a missing property, Task 2 uses a grep proving the component is unreferenced before it is wired in. If this project later grows a test setup, this component is a reasonable first candidate for a render test.
+
+---
+
+## Execution note (2026-11-16)
+
+Task 2 Step 9 did its job: the component as written in Step 1 produced a real
+hydration mismatch. Putting both `rotate` and `y` into framer-motion's `initial`
+made its server and client transform strings disagree —
+
+```
+server: transform: "translateY(16px) rotate(-2deg)"
+client: transform: "rotate(-2deg)"
+```
+
+— which React reports and does not patch up. The rest of the site never hit this
+because every other `whileInView` here animates only `opacity` and `y`.
+
+The shipped component separates the two transforms onto different elements: an
+outer wrapper carries the tilt as a Tailwind class, and the inner `motion.div`
+animates only `opacity` and `y`, exactly like every other section. Tailwind v4
+writes `rotate-*` to the standalone `rotate` property rather than to `transform`,
+so the wrapper's tilt and framer-motion's transform never contend, and
+`hover:rotate-0` works without fighting an inline style.
+
+The tilt classes are written out as literal strings rather than built from
+numbers, because Tailwind only generates classes it can find in the source.
+
+Verified after the fix: no console errors on a fresh tab, seven wrappers
+reporting the intended `rotate` values, no horizontal overflow at 375px or
+1280px, and the grid resolving to 2, 4 and 7 tracks at its three breakpoints.

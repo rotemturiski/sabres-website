@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ClipboardList, UsersRound, MessageSquare, CalendarDays, GraduationCap } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { content, getLangFromSearchParams } from "@/lib/i18n";
+import { SevenMeetings } from "@/components/home/seven-meetings";
 
 export function Program() {
   const lang = getLangFromSearchParams(useSearchParams());
@@ -92,6 +93,8 @@ export function Program() {
                 </div>
              </div>
         </div>
+
+        <SevenMeetings />
       </Container>
     </Section>
   );
