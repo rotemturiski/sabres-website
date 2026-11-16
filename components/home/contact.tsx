@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { content, getLangFromSearchParams, isRtl } from "@/lib/i18n";
+import { FORM_URL } from "@/lib/seo";
 
 export function Contact() {
   const lang = getLangFromSearchParams(useSearchParams());
@@ -33,7 +34,7 @@ export function Contact() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:py-8 pb-8">
                <Button size="lg" className="h-14 px-10 text-lg w-full sm:w-auto" asChild>
-                <a href="https://forms.gle/ep3gq8zFQaEYeC8X7" target="_blank" rel="noopener noreferrer">
+                <a href={FORM_URL} target="_blank" rel="noopener noreferrer">
                    {t.applyCta}{" "}
                    <ArrowRight
                      className={`${rtl ? "mr-2 rotate-180" : "ml-2"} h-5 w-5`}

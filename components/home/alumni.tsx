@@ -8,6 +8,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { useSearchParams } from "next/navigation";
 import { content, getLangFromSearchParams } from "@/lib/i18n";
+import { FORM_URL } from "@/lib/seo";
 
 export function Alumni() {
   const lang = getLangFromSearchParams(useSearchParams());
@@ -78,7 +79,7 @@ export function Alumni() {
           className="text-center"
         >
           <Button size="lg" className="h-14 px-10 text-lg" asChild>
-            <a href="https://forms.gle/ep3gq8zFQaEYeC8X7" target="_blank" rel="noopener noreferrer">
+            <a href={FORM_URL} target="_blank" rel="noopener noreferrer">
               {t.cta}
             </a>
           </Button>

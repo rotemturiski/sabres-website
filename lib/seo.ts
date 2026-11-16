@@ -4,6 +4,10 @@ export const SITE_URL = "https://www.sabres.community";
 export const ORGANIZATION_NAME = "Sabres Community";
 export const ORG_EMAIL = "sabres.projects@gmail.com";
 export const ORG_INSTAGRAM = "https://instagram.com/sabres.community";
+// The single form every CTA on the site points to - registration or interest,
+// whichever is live. Change it here and all six links follow.
+export const FORM_URL = "https://forms.gle/ep3gq8zFQaEYeC8X7";
+
 export const PARENT_ORG_NAME = "Yahav - Mechanchim LeTzionut";
 
 export const seoContent: Record<

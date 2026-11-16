@@ -8,6 +8,7 @@ import { Container } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { content, getLangFromSearchParams } from "@/lib/i18n";
+import { FORM_URL } from "@/lib/seo";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -120,7 +121,7 @@ export function Header() {
               </a>
             </Button>
             <Button variant="default" size="sm" asChild>
-              <a href="https://forms.gle/ep3gq8zFQaEYeC8X7" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
+              <a href={FORM_URL} target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
             </Button>
           </div>
         </nav>
@@ -182,7 +183,7 @@ export function Header() {
                   </a>
                 </Button>
                 <Button className="w-full max-w-xs" onClick={() => setIsOpen(false)} asChild>
-                  <a href="https://forms.gle/ep3gq8zFQaEYeC8X7" target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
+                  <a href={FORM_URL} target="_blank" rel="noopener noreferrer">{t.applyCta}</a>
                 </Button>
               </div>
             </motion.div>

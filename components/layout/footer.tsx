@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Container } from "@/components/ui/section";
 import { Mail, Instagram, Heart } from "lucide-react";
 import { content, getLangFromSearchParams } from "@/lib/i18n";
+import { FORM_URL } from "@/lib/seo";
 
 export function Footer() {
   const DONATE_URL =
@@ -62,7 +63,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://forms.gle/ep3gq8zFQaEYeC8X7"
+                  href={FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-500 hover:text-primary transition-colors"
