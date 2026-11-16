@@ -363,7 +363,7 @@ export const content: Record<
         ],
         stillHaveQuestionsHeading: "Still have questions?",
         stillHaveQuestionsBody:
-          "If you didn&apos;t find the answer you were looking for, feel free to reach out.",
+          "If you didn't find the answer you were looking for, feel free to reach out.",
         emailUs: "Email Us",
         instagram: "Instagram",
         imageAlt: "Sabres community",
