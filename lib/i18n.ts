@@ -167,7 +167,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "Cohort 5 Is Coming - Now in Jerusalem Too",
+        badge: "Cohort 5 in Tel Aviv, Cohort 1 in Jerusalem",
         titleLine1: "Building Bridges,",
         titleHighlight: "Creating Belonging.",
         subtitle:
@@ -202,7 +202,7 @@ export const content: Record<
       program: {
         heading: "Program Structure",
         subheading:
-          "A structured five-stage journey designed to create meaningful connections. Cohort 5 runs from April through July 2027 - and for the first time, in two cities: Tel Aviv and Jerusalem.",
+          "A structured five-stage journey designed to create meaningful connections. From April through July 2027, two cohorts run side by side: our fifth in Tel Aviv, and our very first in Jerusalem.",
         steps: [
           {
             title: "Application",
@@ -264,28 +264,28 @@ export const content: Record<
         team: [
           {
             name: "Rotem Fredi Turiski",
-            title: "Co-Founder & CEO",
+            title: "Founder & CEO",
             image: "/staff/rotem.jpeg",
           },
           {
             name: "Shir Lever",
-            title: "Co-Founder & VP",
+            title: "Founder & Partner",
             image: "/staff/shir.jpeg",
             imageObjectPositionClassName: "object-[center_20%]",
           },
           {
             name: "Naomi Rubin",
-            title: "Co-Founder & Head of Operations",
+            title: "Founder & VP",
             image: "/staff/neomi.jpg",
           },
           {
             name: "Naama Novak Zohar",
-            title: "Co-Founder & Head of Programming",
+            title: "Founder & Partner",
             image: "/staff/nama.jpg",
           },
           {
             name: "Kamryn Felbel",
-            title: "Co-Founder & Head of Alumni",
+            title: "Founder & Partner",
             image: "/staff/kami.jpg",
           },
         ],
@@ -414,7 +414,7 @@ export const content: Record<
     },
     home: {
       hero: {
-        badge: "מחזור 5 יוצא לדרך — והפעם גם בירושלים",
+        badge: "מחזור 5 בתל אביב, מחזור 1 בירושלים",
         titleLine1: "יוצרים חיבורים,",
         titleHighlight: "בונים קהילה.",
         subtitle:
@@ -449,7 +449,7 @@ export const content: Record<
       program: {
         heading: "מבנה התכנית",
         subheading:
-          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מחזור 5 יתקיים מאפריל עד יולי 2027 — ולראשונה בשתי ערים: תל אביב וירושלים.",
+          "מסע מובנה של חמישה שלבים שנועד ליצור קשרים משמעותיים. מאפריל עד יולי 2027 יוצאים לדרך שני מחזורים במקביל: החמישי בתל אביב, והראשון בירושלים.",
         steps: [
           {
             title: "הגשת מועמדות",
@@ -511,28 +511,28 @@ export const content: Record<
         team: [
           {
             name: "רותם פרדי טוריסקי",
-            title: "מייסד שותף ומנכ\"ל",
+            title: "מייסד ומנכ\"ל",
             image: "/staff/rotem.jpeg",
           },
           {
             name: "שיר לבער",
-            title: "מייסדת שותפה וסמנכ\"לית",
+            title: "מייסדת ושותפה",
             image: "/staff/shir.jpeg",
             imageObjectPositionClassName: "object-[center_20%]",
           },
           {
             name: "נעמי רובין",
-            title: "מייסדת שותפה ומנהלת תפעול",
+            title: "מייסדת וסמנכ\"לית",
             image: "/staff/neomi.jpg",
           },
           {
             name: "נעמה נובק זהר",
-            title: "מייסדת שותפה ומנהלת תכנים",
+            title: "מייסדת ושותפה",
             image: "/staff/nama.jpg",
           },
           {
             name: "קמי פלבל",
-            title: "מייסדת שותפה ומנהלת בוגרים",
+            title: "מייסדת ושותפה",
             image: "/staff/kami.jpg",
           },
         ],
