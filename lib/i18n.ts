@@ -66,6 +66,10 @@ export const content: Record<
         cohortPeriodValue: string;
         sessionsLabel: string;
         sessionsValue: string;
+        meetings: {
+          label: string;
+          items: string[];
+        };
       };
       alumni: {
         heading: string;
@@ -233,6 +237,18 @@ export const content: Record<
         cohortPeriodValue: "4 Months",
         sessionsLabel: "Sessions",
         sessionsValue: "7",
+        meetings: {
+          label: "The Seven Meetings",
+          items: [
+            "Opening night",
+            "Where I come from: a picnic",
+            "A trip",
+            "Talk on Zionism",
+            "The Sabres Maccabiah",
+            "Group-led initiative",
+            "Farewell dinner",
+          ],
+        },
       },
       alumni: {
         heading: "Alumni Experiences",
@@ -480,6 +496,18 @@ export const content: Record<
         cohortPeriodValue: "4 חודשים",
         sessionsLabel: "מפגשים",
         sessionsValue: "7",
+        meetings: {
+          label: "שבעת המפגשים",
+          items: [
+            "ערב היכרות",
+            "מאיפה אני בא — פיקניק",
+            "טיול",
+            "שיחה על ציונות",
+            "מכביית סברס",
+            "יוזמה של הקבוצה",
+            "ארוחת פרידה",
+          ],
+        },
       },
       alumni: {
         heading: "חוויות בוגרים",
