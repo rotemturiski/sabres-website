@@ -63,6 +63,7 @@ export function FAQ() {
                 >
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                    aria-expanded={openIndex === index}
                     className="w-full bg-white/80 backdrop-blur-sm border border-zinc-200 rounded-xl p-5 hover:border-zinc-200 transition-colors text-start"
                   >
                     <div className="flex items-center justify-between gap-4">
@@ -74,11 +75,20 @@ export function FAQ() {
                         )}
                       />
                     </div>
-                    {openIndex === index && (
-                      <p className="mt-4 text-muted-foreground/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    )}
+                    {/*
+                      Always rendered, hidden when closed, so every answer is in
+                      the HTML a crawler reads - it used to exist only after a
+                      click. `hidden` (display:none) rather than a visual-only
+                      hide: this <p> sits inside the <button>, so an answer left
+                      in the accessibility tree would be read out as part of the
+                      closed question's own label.
+                    */}
+                    <p
+                      hidden={openIndex !== index}
+                      className="mt-4 text-muted-foreground/80 leading-relaxed"
+                    >
+                      {faq.answer}
+                    </p>
                   </button>
                 </motion.div>
               ))}
